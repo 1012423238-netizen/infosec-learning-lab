@@ -21,8 +21,6 @@
 ```text
 infosec-learning-lab/
 ├── README.md                              # 本文件
-├── .gitignore                             # 忽略规则（敏感信息、临时文件等）
-├── .gitattributes                         # Git LFS 追踪规则
 ├── 00-cheatsheets/                        # 三阶段速查表
 │   ├── week1-4-basic.md                   # 第一阶段：Linux/Python/浏览器安全基础
 │   ├── week5-12-web-security.md           # 第二阶段：Web 漏洞逐个攻破
@@ -34,38 +32,40 @@ infosec-learning-lab/
 ├── 02-web-security-lab/                   # DVWA 靶场搭建与实操笔记
 │   ├── README.md                          # DVWA 安装教程
 │   └── docs/images/                       # 安装过程截图
-├── 03-study-plans/                        # 学习计划与总纲
-
+├── 03-study-plans/                        # 学习计划
+│   └── 第2-4周自学操作流程.md             # 基础阶段操作流程
+├── 05-lab-reports/                        # 每周实操报告
+│   ├── 第五周-SQL注入.md
+│   ├── 第六周-XSS注入.md
+│   ├── 第七周-CSRF实验报告总结.md
+│   └── 第八周-文件上传漏洞（Upload-labs）.md
+└── 06-attack-notes/                       # 攻击分类笔记（按漏洞类型）
+    ├── 01-sql-injection.md
+    ├── 02-xss.md
+    ├── 03-csrf.md
+    └── 04-file-upload.md
 ```
+
+> 学习笔记持续更新中：文件包含、命令注入、SSRF、XXE 等后续攻击笔记，以及渗透测试实战操作流程，将在练习完成后陆续补充。
 
 ## 快速开始
 
-本仓库中的 `04-operational-flows/第二部分-Web安全核心操作流程.docx` 体积较大，使用 Git LFS 托管。克隆时若未安装 Git LFS，该文件只会显示为一个指针文本，无法打开。
+```bash
+git clone https://github.com/1012423238-netizen/infosec-learning-lab.git
+cd infosec-learning-lab
+```
 
-1. 安装 Git LFS（Windows 可下载官方发行版，或使用 `winget install Git.LFS`）。
-2. 克隆仓库：
-
-   ```bash
-   git clone https://github.com/1012423238-netizen/infosec-learning-lab.git
-   cd infosec-learning-lab
-   ```
-
-3. 拉取 LFS 托管的真实文件内容：
-
-   ```bash
-   git lfs install
-   git lfs pull
-   ```
-
-4. 阅读入口：先看 `03-study-plans/WEB安全学习计划.md` 了解整体路线，再按周推进，对应查阅 `05-lab-reports/` 中的复盘报告。
+阅读入口：先看 `00-cheatsheets/` 了解三阶段学习速查，再按漏洞类型查阅 `06-attack-notes/` 中的攻击分类笔记。
 
 ## 使用方式
 
 - **速查表**（`00-cheatsheets/`）：按阶段整理的命令与知识点速查，适合复习时快速翻阅。
-- **学习计划**（`03-study-plans/`）：整体路线、时间安排与进度标注，作为自学的总纲。
-- **操作流程**（`04-operational-flows/`）：每个阶段的详细实操步骤，含命令逐条讲解与截图。
-- **实操报告**（`05-lab-reports/`）：按周记录特定漏洞的实验过程、绕过手法与踩坑总结。
-- **Word 文档**（`.docx`）可用 Microsoft Word 或 WPS 打开；Markdown 文件可用任意编辑器阅读。
+- **学习计划**（`03-study-plans/`）：基础阶段操作流程。
+- **每周实操报告**（`05-lab-reports/`）：按周记录 SQL 注入、XSS、CSRF、文件上传的实操与踩坑总结。
+- **攻击分类笔记**（`06-attack-notes/`）：按漏洞类型整理的攻击笔记，含原理、利用手法、实战踩坑与防御方案。
+- **网络基础**（`01-network-fundamentals/`）：网络基础知识与校园网规划设计。
+- **靶场搭建**（`02-web-security-lab/`）：DVWA 靶场搭建与实操笔记。
+- **Markdown 文件**可用任意编辑器阅读。
 
 ## 靶场环境与工具
 

@@ -419,7 +419,7 @@ python3 dir_scan.py
 ```python
 import re
 
-text = "我的手机号是 13812345678，邮箱是 test@example.com"
+text = "我的手机号是 13800000000，邮箱是 test@example.com"
 
 # search：找到第一个匹配
 phone = re.search(r"\d{11}", text)
