@@ -35,18 +35,7 @@ infosec-learning-lab/
 │   ├── README.md                          # DVWA 安装教程
 │   └── docs/images/                       # 安装过程截图
 ├── 03-study-plans/                        # 学习计划与总纲
-│   ├── 网络安全自学完整计划.docx           # 整体学习规划
-│   ├── 第2-4周自学操作流程.docx            # 第一阶段操作流程
-│   └── WEB安全学习计划.md                  # Web 安全从零到实战详细计划
-├── 04-operational-flows/                  # 核心操作流程（含大量截图）
-│   ├── 第二部分-Web安全核心操作流程.docx    # 第二阶段操作流程（Git LFS 管理）
-│   └── 第三部分-渗透测试实战操作流程.docx    # 第三阶段操作流程
-└── 05-lab-reports/                        # 每周实操报告
-    ├── 第五周-SQL注入.docx
-    ├── 第六周-XSS注入.docx
-    ├── 第七周-CSRF实验报告总结.docx
-    ├── 第八周-文件上传漏洞（Upload-labs）.md
-    └── 第八周-文件上传漏洞（Upload-labs）实战操作报告.docx
+
 ```
 
 ## 快速开始
